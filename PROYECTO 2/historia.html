@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2H</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <P><img src="img/ds.jpeg" width="50px" height="35px"></img>       DISEÑO RESPONSIVO</P>
+		<nav>
+			<a style="color: aliceblue;" href="index.html">Página principal</a>
+			<a style="color: aliceblue;" href="historia.html">HISTORIA</a>
+			<a style="color: aliceblue;" href="acercade.html">ACERCA DE...</a>
+			<a style="color: aliceblue;" href="ejemplos.html">EJEMPLOS</a>
+		</nav>
+	</header>
+    
+    <section class="contenido">
+        <img src="img/fondo.jpg" alt="una foto">
+        <p>HISTORIA<p>
+    </section>
+    <TABLE >
+        <TR style="background-color: black;">
+             <TD><hr><h2 class="txth">Un poco de historia</h2><hr><img src="img/responsivo.png" alt="otra foto" width="150px" height="90px"> </TD>
+             
+             <TD style="color: white;">Antes de la llegada de la web móvil, el panorama de los dispositivos finales con acceso a Internet era relativamente homogéneo: existían los ordenadores portátiles y los de sobremesa, que eran muy similares en cuanto a medios de entrada y salida. Ambos tipos de dispositivos contaban con un teclado, un ratón o un trackpad, y una pantalla con una anchura de 1000-2000 píxeles.<br><br><br>
+                En aquel entonces no era necesario hacer ningún esfuerzo especial para desarrollar una página web que se visualizara correctamente en cualquier dispositivo. La solución más sencilla era limitar el ancho de una página al mínimo común denominador. Un enfoque popular era mostrar las páginas con 800 píxeles de ancho y centradas o justificadas a la izquierda. En pantallas más grandes, podía haber
+                algún espacio en blanco extra, pero las páginas eran fáciles de leer en todos los dispositivos.<br><br><br>
+                Esto cambió con la llegada de los dispositivos móviles y la importante diversificación de los dispositivos finales. Las pantallas de los smartphones y las tabletas difieren de las de los ordenadores de sobremesa en varios aspectos. Las dimensiones de los píxeles juegan ahora un papel importante y la resolución física (píxeles por pulgada o ppi) también entró en escena con la llegada de las pantallas retina. Y, por supuesto, estos dispositivos se manejan con el dedo en lugar de con el ratón. Además de los teléfonos inteligentes y las tabletas, también han aparecido en el mercado grandes monitores de alta resolución, lo que significa que una página web moderna tiene que funcionar en pantallas con anchos que van desde 320 píxeles hasta más de 4000 píxeles.</TD>
+        </TR> 
+        <br>
+        <TR style="background-color: aliceblue;">
+             <TD><img src="img/tamaño.jpg" alt="x foto" width="150px" height="90px"></TD> 
+             <TD><hr><h2 class="txth1">Uso de medidas</h2> <hr>
+                Unidades em<br><br><br>
+                em se corresponde con la medida actual de la fuente en un contenedor. Es decir, si hemos cambiado el tamaño de la fuente en un elemento y asignado font-size: 20px, entonces dentro de ese contenedor, 1em será igual a 20px.
+                El tamaño de fuente predeterminado en el navegador es normalmente por defecto de 16px, por lo que, si no lo has alterado en algún lugar de tu CSS, 1em equivale a 16px. Aunque hay que tomarlo sólo como referencia, ya que ese tamaño es algo propio del navegador y podría cambiar entre navegadores, dispositivos, versiones, modelos, sistemas operativos o configuraciones del propio usuario.
+                <br><br><br>Unidades rem<br><br><br>
+                rem es la unidad  relativa al tamaño de la fuente, pero teniendo en cuenta el tamaño de la fuente del elemento HTML y no la heredada del elemento donde se encuentre ni la definida. Conviene subrayar que hay navegadores antiguos que no son compatibles con rem.
+                Esta unidad es una magnífica forma de definir los tamaños de las fuentes, pues es más fácil de organizar y evita sorpresas al usar em, ya que rem siempre tendrá en cuenta una única medida para calcular el tamaño final de la fuente.
+                <br><br><br>Unidades vw y vh<br><br><br>
+                De reciente aparición en el estándar CSS, se corresponden con las siglas viewport width para vh y viewport height para vh, o lo que es lo mismo: la anchura y la altura de la pantalla del dispositivo. No corresponden exactamente con las dimensiones reales, puesto que en ocasiones el viewport puede falsear los datos y el dispositivo puede tener unas dimensiones  distintas de pantalla.
+                Son unidades relativas, aunque en este caso lo son en relación con la pantalla del dispositivo.  1vw correspondería a la centésima parte de la anchura del viewport del dispositivo,  por lo que 100vw sería la total. Algo parecido ocurriría con la vertical vh.
+                Esto es útil para que un elemento ocupe toda la altura de la pantalla del dispositivo, pero sabemos que un height: 100% no funciona de una forma deseable en la mayoría de los casos. Para que lo haga, podríamos usar vh como unidad, de la siguiente forma, aunque hay que tener en cuenta de que no funciona en pantallas de ordenadores y deberás aplicar estilos alternativos.</TD>
+   </TR>
+   </TABLE>
+</body>
+</html>
